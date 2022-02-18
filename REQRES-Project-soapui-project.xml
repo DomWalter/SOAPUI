@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="c5738059-9159-472f-8eef-b3623ef74afa" activeEnvironment="Default" name="REQRES Project" soapui-version="5.7.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="JSON Property Transfer"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="TestCase 1"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="e167e08b-2aab-4b17-8fc7-3b7f5e173657" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://reqres.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://reqres.in</con:endpoint></con:endpoints><con:resource name="Users" path="/api/users" id="dac3a514-27d5-4d97-9a0f-c4a048dbb4fa"><con:settings/><con:parameters><con:parameter><con:name>page</con:name><con:value>2</con:value><con:style>QUERY</con:style><con:default>2</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Users 1" id="1a8deba4-1bc5-423b-88bc-a011cb0d1837" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:user="https://reqres.in/api/users">user:Response</con:element></con:representation><con:request name="Request 1" id="b2f94cf3-7ab9-4e08-b3bd-80961bfc5165" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request/><con:originalUri>https://reqres.in/api/users</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="2" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="ea8b47c9-7b78-4b5e-bb3e-fa815a415805" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://reqres.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://reqres.in</con:endpoint></con:endpoints><con:resource name="2" path="/api/users/2" id="8a273843-a593-4cfe-a222-4ca8ad97c3d6"><con:settings/><con:parameters/><con:method name="2 1" id="072381c8-50d9-47bb-9d7c-4db667b56429" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://reqres.in/api/users/2">ns:Response</con:element></con:representation><con:request name="Request 1" id="2ec5d4cd-96ff-497b-9f43-582d14d3c0ca" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request>{
+    "name": "morpheus",
+    "job": "zion resident"
+}</con:request><con:originalUri>https://reqres.in/api/users/2</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="3a30cc8e-8cd7-4855-b84f-d4234e042be9" name="JSON Property Transfer"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="b165b8ed-7526-43ee-b55e-337e884443ad" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:description>1, ListUsers gets a full list of user details
+2, Property Transfer gets a certain name from user details, based on JSON Path
+3, UpdateUser then takes that name and uses it to submit a PUT request
+
+This also contains PassUser Groovy script which also copies name between the two calls.</con:description><con:settings/><con:testStep type="properties" name="Properties" id="23835947-3c82-43bc-bfe8-07d3f202c7db"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>user</con:name><con:value>Tobias</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="ListUsers" id="515bdb60-a97a-4cf0-bcfe-1200f1f82577"><con:settings/><con:config service="https://reqres.in" resourcePath="/api/users" methodName="Users 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ListUsers" id="b2f94cf3-7ab9-4e08-b3bd-80961bfc5165" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request/><con:originalUri>https://reqres.in/api/users</con:originalUri><con:assertion type="Simple Contains" id="e0ff2bb2-a3f0-43b8-9a63-8c40ad3a0d4d" name="Contains"><con:configuration><token>data</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="2" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="PassUser" id="dda50ec5-606e-4f48-bc48-8682968a2e2f"><con:settings/><con:config><script>//Store response of ListUsers as an object
+response = testRunner.testCase.getTestStepByName('ListUsers').getPropertyValue('response')
+//Constructor for jsonSlurper
+jsonSlurper = new groovy.json.JsonSlurper()
+//Store all users as an object
+users = jsonSlurper.parseText(response)
+//Use JSONPath to get a single user 
+user = users.data[2].first_name
+
+//Saves user into Properties step
+testRunner.testCase.getTestStepByName('Properties').setPropertyValue('user',user)
+
+</script></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="9888c5e4-39e2-44cf-b065-cc518250d6f7"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>UserName</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>ListUsers</con:sourceStep><con:sourcePath>data[2].first_name</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>UpdateUser</con:targetStep><con:targetPath>name</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="UpdateUser" id="741dc48e-81f4-4687-8774-300298acc632"><con:settings/><con:config service="https://reqres.in" resourcePath="/api/users/2" methodName="2 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateUser" id="2ec5d4cd-96ff-497b-9f43-582d14d3c0ca" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request>{"name":"Tobias","job":"zion resident"}</con:request><con:originalUri>https://reqres.in/api/users/2</con:originalUri><con:assertion type="Simple Contains" id="fe679282-a06a-42d3-93e0-891607d9c245" name="Contains"><con:configuration><token>updatedAt</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="UpdateUserUsingPropertiesFile" id="faa38271-4161-4f56-b932-9d4d54cf9f7a"><con:settings/><con:config service="https://reqres.in" resourcePath="/api/users/2" methodName="2 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateUserUsingGroovy" id="2ec5d4cd-96ff-497b-9f43-582d14d3c0ca" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request>{"name":"${Properties#user}","job":"zion resident"}</con:request><con:originalUri>https://reqres.in/api/users/2</con:originalUri><con:assertion type="Simple Contains" id="fe679282-a06a-42d3-93e0-891607d9c245" name="Contains"><con:configuration><token>updatedAt</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="1564ed6b-3f36-48d2-8b21-9bf8183bb70c" name="Library" disabled="true"><con:description>This is used to create CSV reports. See link below.....
+https://dzone.com/articles/how-to-achieve-csv-reporting-in-soapui-open-source-1</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="d2a3ab9e-80ab-4e12-8307-b3a571124f75" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Reporting_Utility" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GenerateCSVReport" id="e4c0f0ea-4438-4871-a8f9-44219e5a5b68"><con:settings/><con:config><script>// Try-catch block to handle exceptions
+try {
+
+// 1. Create a "SoapUIResults" folder in the project path 
+      // Retrieve the project root folder
+      def projectPath = new com.eviware.soapui.support.GroovyUtils(context).projectPath
+
+      // Specify a folder inside project root to store the results
+      String folderPath = projectPath + "/SoapUIResults";
+
+      // Create a File object for the specified path
+      def resultFolder = new File(folderPath);
+
+      // Check for existence of folder and create a folder
+      if(!resultFolder.exists())
+      {
+        resultFolder.mkdirs();
+      }
+
+/* ------------------------------------------------------------------------------- */
+
+// 2. Create a subfolder (with timestamp) to store the request-response local copy 
+      // Retrieve the latest execution date-time
+      Date d = new Date();
+      def executionDate = d.format("dd-MMM-yyyy HH_mm");
+
+      // Specify the subfolder path with name Request-Response_CurrentTimeStamp
+      String subfolderPath1 = folderPath+ "/Request-Response_"+executionDate;
+
+      // Create this sub-folder
+      new File(subfolderPath1).mkdirs();
+
+/* ------------------------------------------------------------------------------- */
+
+// 3. Create another subfolder "CSV Reports" to store the reports file 
+      // Specify the subfolder path with name CSV Reports
+      String subfolderPath2 = folderPath+ "/CSV Reports";
+
+      // Create this sub-folder
+      new File(subfolderPath2).mkdirs();
+
+/* ------------------------------------------------------------------------------- */
+
+// 4. Create a Report.csv file inside the CSV Reports folder 
+      // Create a File object for Report csv file (with timestamp)
+      def reportFile = new File(subfolderPath2, "Report_"+executionDate+".csv");
+
+      // Check for existence of report file and create a file
+      if(!reportFile.exists())
+      {
+        reportFile.createNewFile();
+        // Create required column names in the report file
+        reportFile.write('"Test Suite","Test Case","Test Step","Step Type","Step Status",'
+                        +'"Result message","Execution Date"');
+      }
+/* ------------------------------------------------------------------------------- */
+// 5. Inserting data in the file
+      // Iterate over all the test steps results
+  for(stepResult in testRunner.getResults())
+  {
+    // Retrieve Test Suite name
+   def testSuite = testRunner.testCase.testSuite.name;
+   // Retrieve Test Case name
+   def testCase = testRunner.testCase.name;
+   // Retrieve Test Step
+   def testStep = stepResult.getTestStep();
+   // Retrieve Test Step name
+   def testStepName = testStep.name
+   // Retrieve Test Step type
+   def type = testStep.config.type
+   // Retrieve Test Step status
+   def status = stepResult.getStatus()
+
+   // Creating new line in report file
+   reportFile.append('\n');
+
+   // Write all the necessary information in the file
+   reportFile.append('"' + testSuite + '",');
+   reportFile.append('"' + testCase + '",');
+   reportFile.append('"' + testStepName + '",');
+   reportFile.append('"' + type + '",');
+   reportFile.append('"' + status + '",');
+
+   // Retrieve the test result messages
+   reportFile.append('"');
+   for(resMessage in stepResult.getMessages())
+   {
+     // Write messages and separate multiple messages by new line
+     reportFile.append('Message:' + resMessage + '\n');
+   }
+   reportFile.append('",');
+
+   //Write executionDate in the file
+   reportFile.append('"' + executionDate + '",');
+/* ------------------------------------------------------------------------------- */
+// 6. Extract the request and response and save it to external file
+      // Verify if the test step type is request: SOAP project or restrequest: REST project
+        if((type=="request").or(type=="restrequest"))
+        {
+          // Extract the request from the test step
+          def extRequest = testStep.properties["Request"].value;    
+
+      // Create a file in the reports folder and write the request
+      // Naming convention: request_TestSuiteName_TestCaseName_TestStepName.txt
+      def requestFile=subfolderPath1+"/request_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rqfile = new File(requestFile);
+      rqfile.write(extRequest, "UTF-8");
+
+      // Extract the response from the test step
+      def extResponse = stepResult.getResponseContent();    
+
+      // Create a file in the reports folder and write the response
+      // Naming convention: response_TestSuiteName_TestCaseName_TestStepName.txt
+      def responseFile=subfolderPath1+"/response_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rsfile = new File(responseFile);
+      rsfile.write(extResponse, "UTF-8");
+     }
+   }
+ }
+catch(exc)
+{
+   log.error("Exception happened: " + exc.toString());
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="bed72ce3-6a13-416f-870c-a011bdeb72cd"><con:settings/><con:config><script>def projectPath = new com.eviware.soapui.support.GroovyUtils(context).projectPath
+
+log.info (projectPath)</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
